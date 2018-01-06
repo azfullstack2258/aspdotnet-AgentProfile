@@ -2,105 +2,618 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <img src="~/images/banner1.svg" alt="ASP.NET" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Learn how to build ASP.NET apps that can run anywhere.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525028&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
+<div id="content" class="c-content" style="padding-bottom: 309px;">
+    <div class="c-content__wrap">
+        <div class="l-container">
+            <div class="c-content__agent-profile h-clearfix">
+                <div class="c-content__agent-overview l-col l-col-8">
+                    <div class="c-content__agent-card">
+                        <h1>Melissa Crosby</h1>
+                        <div class="c-content__agent-profile-photo">
+                            <img src="~/images/agent5.png" alt="">
+                        </div>
+                        <div class="c-content__rating c-content__rating--agent">
+                            <div class="c-content__rating-stars">
+                                <span class="c-content__rating-star c-content__rating-star--full"></span>
+                                <span class="c-content__rating-star c-content__rating-star--full"></span>
+                                <span class="c-content__rating-star c-content__rating-star--full"></span>
+                                <span class="c-content__rating-star c-content__rating-star--full"></span>
+                                <span class="c-content__rating-star c-content__rating-star--half-full"></span>
+                            </div>
+                            <div class="c-content__rating-info">
+                                <div class="c-content__rating-average">4.5</div>
+                                <a href="http://fast-coding.com/house/agent-profile.html#" class="c-content__agent-review-count">16</a>
+                            </div>
+                        </div>
+                        <div class="c-content__skill-bars c-content__skill-bars--agent">
+                            <div class="c-content__skill-bar">
+                                <div class="c-content__skill-bar-title">Local knowledge</div>
+                                <div class="c-content__skill-bar-average">4.5</div>
+                                <div class="c-content__skill-bar-row--default">
+                                    <div class="c-content__skill-bar-row" style="width:90%;"></div>
+                                </div>
+                            </div>
+                            <div class="c-content__skill-bar">
+                                <div class="c-content__skill-bar-title">Process expertise</div>
+                                <div class="c-content__skill-bar-average">4.2</div>
+                                <div class="c-content__skill-bar-row--default">
+                                    <div class="c-content__skill-bar-row" style="width:84%;"></div>
+                                </div>
+                            </div>
+                            <div class="c-content__skill-bar">
+                                <div class="c-content__skill-bar-title">Responsiveness</div>
+                                <div class="c-content__skill-bar-average">5.0</div>
+                                <div class="c-content__skill-bar-row--default">
+                                    <div class="c-content__skill-bar-row" style="width:100%;"></div>
+                                </div>
+                            </div>
+                            <div class="c-content__skill-bar">
+                                <div class="c-content__skill-bar-title">Negotiation Skills</div>
+                                <div class="c-content__skill-bar-average">4.1</div>
+                                <div class="c-content__skill-bar-row--default">
+                                    <div class="c-content__skill-bar-row" style="width:82%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-content__agent-desc">
+                        <h4 class="l-border">About</h4>
+                        <p>
+                            Being a full-service Realtor since 2007, I have been baptized by fire in a very tough housing market. I have successfully closed over 60 transactions and
+                            processed over 70 short sales both as the listing agent and some for other agents. I am very knowledgeable about lenders and their processes. I strive to
+                            exceed expectations and never forget that I am always accountable to my clients.
+                        </p>
+                        <p>
+                            My objective is to establish relationships for life, not just for the current transaction. I enjoy assisting home buyers and sellers to get moved to a
+                            better place, one that is exciting.
+                        </p>
+                        <p class="l-small">
+                            <strong>Brokerage:</strong> Berkshire Hathaway HomeServices Elite Real Estate
+                        </p>
+                        <p class="l-small">
+                            <strong>Specialties:</strong> Property Management, Buyer’s Agent, Listing Agent…
+                        </p>
+                        <p class="l-small">
+                            <strong>License Number(s):</strong> #5452129
+                        </p>
+                    </div>
+                </div>
+                <div class="c-content__agent-form l-col l-col-4">
+                    <div class="l-box l-box--contact-agent">
+                        <form class="l-form l-contact-agent-form">
+                            <div class="l-form__holder">
+                                <h5>Contact Melissa</h5>
+                                <div class="l-form__inner">
+                                    <div class="l-form-row h-clearfix">
+                                        <div class="l-form-group">
+                                            <input type="text" class="l-form-control" id="inputFirstName_ContactAgentForm" required="">
+                                            <label for="inputFirstName_ContactAgentForm" class="l-form-label">first name</label>
+                                            <span class="l-form-control-focus"></span>
+                                        </div>
+                                    </div>
+                                    <div class="l-form-row h-clearfix">
+                                        <div class="l-form-group">
+                                            <input type="text" class="l-form-control" id="inputLastName_ContactAgentForm" required="">
+                                            <label for="inputLastName_ContactAgentForm" class="l-form-label">last name</label>
+                                            <span class="l-form-control-focus"></span>
+                                        </div>
+                                    </div>
+                                    <div class="l-form-extra demo">
+                                        <div class="l-form-row h-clearfix">
+                                            <div class="l-form-group">
+                                                <input type="email" class="l-form-control" id="inputEmail_ContactAgentForm" required="">
+                                                <label for="inputEmail_ContactAgentForm" class="l-form-label">email</label>
+                                                <span class="l-form-control-focus"></span>
+                                            </div>
+                                        </div>
+                                        <div class="l-form-row h-clearfix">
+                                            <div class="l-form-group">
+                                                <input type="text" class="l-form-control" id="inputPhone_ContactAgentForm" required="">
+                                                <label for="inputPhone_ContactAgentForm" class="l-form-label">phone</label>
+                                                <span class="l-form-control-focus"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="l-form-row h-clearfix">
+                                        <div class="l-form-group l-form-group--textarea">
+                                            <textarea class="l-form-control" id="areaComment_ContactAgentForm" required=""></textarea>
+                                            <label for="areaComment_ContactAgentForm" class="l-form-label">comment</label>
+                                            <span class="l-form-control-focus"></span>
+                                        </div>
+                                    </div>
+                                    <div class="l-form-row l-form-row--submit l-row--center">
+                                        <button type="submit" class="l-btn l-btn-primary">Submit</button>
+                                        <div class="l-form__buttons h-clearfix">
+                                            <a href="http://fast-coding.com/house/agent-profile.html#" class="l-btn l-btn--action l-btn--gray">Call</a>
+                                            <a href="http://fast-coding.com/house/agent-profile.html#" class="l-btn l-btn--action l-btn--gray">Leave Review</a>
+                                        </div>
+                                        <div class="l-form-text">
+                                            <a href="http://fast-coding.com/house/agent-profile.html#">www.crosbyrealestate.com</a>
+                                        </div>
+                                        <ul class="l-list l-list--social c-content__agent-form-social">
+                                            <li>
+                                                <a href="http://fast-coding.com/house/agent-profile.html#" target="_blank">
+                                                    <span class="l-list--social__icon">
+                                                        <img src="~/images/icon-twitter-agent.svg" alt="">
+                                                    </span>
+                                                    <span class="l-list--social__icon--hover">
+                                                        <img src="~/images/icon-twitter-agent-dark.svg" alt="">
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="http://fast-coding.com/house/agent-profile.html#" target="_blank">
+                                                    <span class="l-list--social__icon">
+                                                        <img src="~/images/icon-facebook-agent.svg" alt="">
+                                                    </span>
+                                                    <span class="l-list--social__icon--hover">
+                                                        <img src="~/images/icon-facebook-agent-dark.svg" alt="">
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="http://fast-coding.com/house/agent-profile.html#" target="_blank">
+                                                    <span class="l-list--social__icon">
+                                                        <img src="~/images/icon-linkedin-agent.svg" alt="">
+                                                    </span>
+                                                    <span class="l-list--social__icon--hover">
+                                                        <img src="~/images/icon-linkedin-agent-dark.svg" alt="">
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="item">
-            <img src="~/images/banner2.svg" alt="Visual Studio" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    There are powerful new features in Visual Studio for building modern web apps.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525030&clcid=0x409">
-                        Learn More
+            <div class="l-divider l-divider--big"></div>
+            <h3>Active Listings</h3>
+            <div class="c-content__property c-content__property--related">
+                <div class="c-content__property-item">
+                    <a href="http://fast-coding.com/house/agent-profile.html#">
+                        <div class="c-content__property-main">
+                            <div class="c-content__property-image">
+                                <img src="~/images/home1.jpg" alt="">
+                            </div>
+                            <div class="c-content__property-price h-clearfix">
+                                <div class="c-content__property-price-current">
+                                    $345,000
+                                </div>
+                                <div class="c-content__property-price-changes c-content__property-price-changes--up">
+                                    <span class="value">6,5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-content__property-desc">
+                            <div class="c-content__property-info h-clearfix">
+                                <div class="c-content__property-address">
+                                    472 Ponderosa Dr, Alpine
+                                </div>
+                                <div class="c-content__property-photos">
+                                    <span>×</span> 12
+                                </div>
+                            </div>
+                            <div class="c-content__property-features h-clearfix">
+                                <div class="c-content__property-feature c-content__property-feature--beds">
+                                    4
+                                </div>
+                                <div class="c-content__property-feature c-content__property-feature--bath">
+                                    3.0
+                                </div>
+                                <div class="c-content__property-feature c-content__property-feature--sqft">
+                                    2,785
+                                </div>
+                            </div>
+                        </div>
                     </a>
-                </p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="~/images/banner3.svg" alt="Package Management" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Bring in libraries from NuGet and npm, and automate tasks using Grunt or Gulp.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525029&clcid=0x409">
-                        Learn More
+                    <div class="c-content__property-favorite"></div>
+                </div>
+                <div class="c-content__property-item is-favorite">
+                    <a href="http://fast-coding.com/house/agent-profile.html#">
+                        <div class="c-content__property-main">
+                            <div class="c-content__property-image">
+                                <img src="~/images/home8.jpg" alt="">
+                            </div>
+                            <div class="c-content__property-price h-clearfix">
+                                <div class="c-content__property-price-current">
+                                    $345,000
+                                </div>
+                                <div class="c-content__property-price-changes c-content__property-price-changes--down">
+                                    <span class="value">10</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-content__property-desc">
+                            <div class="c-content__property-info h-clearfix">
+                                <div class="c-content__property-address">
+                                    472 Ponderosa Dr, Alpine
+                                </div>
+                                <div class="c-content__property-photos">
+                                    <span>×</span> 12
+                                </div>
+                            </div>
+                            <div class="c-content__property-features h-clearfix">
+                                <div class="c-content__property-feature c-content__property-feature--beds">
+                                    4
+                                </div>
+                                <div class="c-content__property-feature c-content__property-feature--bath">
+                                    3.0
+                                </div>
+                                <div class="c-content__property-feature c-content__property-feature--sqft">
+                                    2,785
+                                </div>
+                            </div>
+                        </div>
                     </a>
-                </p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="~/images/banner4.svg" alt="Microsoft Azure" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Learn how Microsoft's Azure cloud platform allows you to build, deploy, and scale web apps.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525027&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-    </div>
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div>
+                    <div class="c-content__property-favorite"></div>
+                </div>
+                <div class="c-content__property-item">
+                    <a href="http://fast-coding.com/house/agent-profile.html#">
+                        <div class="c-content__property-main">
+                            <div class="c-content__property-image">
+                                <img src="~/images/home11.jpg" alt="">
+                            </div>
+                            <div class="c-content__property-price h-clearfix">
+                                <div class="c-content__property-price-current">
+                                    $345,000
+                                </div>
+                                <div class="c-content__property-price-changes c-content__property-price-changes--none">
 
-<div class="row">
-    <div class="col-md-3">
-        <h2>Application uses</h2>
-        <ul>
-            <li>Sample pages using ASP.NET Core MVC</li>
-            <li>Theming using <a href="https://go.microsoft.com/fwlink/?LinkID=398939">Bootstrap</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>How to</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398600">Add a Controller and View</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699315">Manage User Secrets using Secret Manager.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699316">Use logging to log a message.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699317">Add packages using NuGet.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699319">Target development, staging or production environment.</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>Overview</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=518008">Conceptual overview of what is ASP.NET Core</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699320">Fundamentals of ASP.NET Core such as Startup and middleware.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398602">Working with Data</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398603">Security</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699321">Client side development</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699322">Develop on different platforms</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699323">Read more on the documentation site</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>Run &amp; Deploy</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517851">Run your app</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517853">Run tools such as EF migrations and more</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398609">Publish to Microsoft Azure Web Apps</a></li>
-        </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-content__property-desc">
+                            <div class="c-content__property-info h-clearfix">
+                                <div class="c-content__property-address">
+                                    472 Ponderosa Dr, Alpine
+                                </div>
+                                <div class="c-content__property-photos">
+                                    <span>×</span> 12
+                                </div>
+                            </div>
+                            <div class="c-content__property-features h-clearfix">
+                                <div class="c-content__property-feature c-content__property-feature--beds">
+                                    4
+                                </div>
+                                <div class="c-content__property-feature c-content__property-feature--bath">
+                                    3.0
+                                </div>
+                                <div class="c-content__property-feature c-content__property-feature--sqft">
+                                    2,785
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="c-content__property-favorite"></div>
+                </div>
+            </div>
+            <div class="l-row l-row--center">
+                <a class="l-btn l-btn-more l-btn-more--arrow-changeable" href="http://fast-coding.com/house/agent-profile.html#"><span class="h-hide-on-mobile">See </span>More</a>
+            </div>
+            <div class="l-divider l-divider--big"></div>
+            <h3>Past Sales</h3>
+            <div class="c-content__homes">
+                <div class="c-content__homes-row">
+                    <div class="c-content__homes-col c-content__homes-col--property">
+                        Property
+                    </div>
+                    <div class="c-content__homes-col c-content__homes-col--details">
+                        Details
+                    </div>
+                    <div class="c-content__homes-col c-content__homes-col--represented">
+                        Represented
+                    </div>
+                    <div class="c-content__homes-col c-content__homes-col--price">
+                        Price
+                    </div>
+                </div>
+                <div class="c-content__homes-row">
+                    <div class="c-content__homes-col c-content__homes-col--property">
+                        <div class="c-content__homes-property-photo">
+                            <img src="~/images/home5.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="c-content__homes-col c-content__homes-col--details">
+                        <span class="c-content__homes-price">$900,000</span>
+                        <span class="c-content__homes-location">Jamul, CA</span>
+                        <span class="c-content__homes-address">3247 Greystone Dr • Jamul, CA 91935</span>
+                        <span class="c-content__homes-info">7 bed, 4 bath, 6,150 sqft</span>
+                        <span class="c-content__homes-date">Sold date: 09/12/2017</span>
+                    </div>
+                    <div class="c-content__homes-col c-content__homes-col--represented">
+                        Seller
+                    </div>
+                    <div class="c-content__homes-col c-content__homes-col--price">
+                        $900,000
+                    </div>
+                </div>
+                <div class="c-content__homes-row">
+                    <div class="c-content__homes-col c-content__homes-col--property">
+                        <div class="c-content__homes-property-photo">
+                            <img src="~/images/home4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="c-content__homes-col c-content__homes-col--details">
+                        <span class="c-content__homes-price">$490,000</span>
+                        <span class="c-content__homes-location">El Cajon, CA</span>
+                        <span class="c-content__homes-address">9951 Watergum Trl • Santee, CA 92071</span>
+                        <span class="c-content__homes-info">6 bed, 5.5 bath, 5,505 sqft</span>
+                        <span class="c-content__homes-date">Sold date: 07/21/2017</span>
+                    </div>
+                    <div class="c-content__homes-col c-content__homes-col--represented">
+                        Buyer
+                    </div>
+                    <div class="c-content__homes-col c-content__homes-col--price">
+                        $490,000
+                    </div>
+                </div>
+                <div class="c-content__homes-row">
+                    <div class="c-content__homes-col c-content__homes-col--property">
+                        <div class="c-content__homes-property-photo">
+                            <img src="~/images/home12.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="c-content__homes-col c-content__homes-col--details">
+                        <span class="c-content__homes-price">$529,000</span>
+                        <span class="c-content__homes-location">Santee, CA</span>
+                        <span class="c-content__homes-address">627 Hawthorne Ave • El Cajon, CA 92020</span>
+                        <span class="c-content__homes-info">6 bed, 5.5 bath, 5,505 sqft</span>
+                        <span class="c-content__homes-date">Sold date: 09/11/2017</span>
+                    </div>
+                    <div class="c-content__homes-col c-content__homes-col--represented">
+                        Buyer
+                    </div>
+                    <div class="c-content__homes-col c-content__homes-col--price">
+                        $529,000
+                    </div>
+                </div>
+                <div class="c-content__homes-row">
+                    <div class="c-content__homes-col c-content__homes-col--property">
+                        <div class="c-content__homes-property-photo">
+                            <img src="~/images/home6.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="c-content__homes-col c-content__homes-col--details">
+                        <span class="c-content__homes-price">$555,000</span>
+                        <span class="c-content__homes-location">La Mesa, CA</span>
+                        <span class="c-content__homes-address">9565 Janfred Way • La Mesa, CA 91942</span>
+                        <span class="c-content__homes-info">6 bed, 5.5 bath, 5,505 sqft</span>
+                        <span class="c-content__homes-date">Sold date: 07/11/2017</span>
+                    </div>
+                    <div class="c-content__homes-col c-content__homes-col--represented">
+                        Buyer
+                    </div>
+                    <div class="c-content__homes-col c-content__homes-col--price">
+                        $555,000
+                    </div>
+                </div>
+                <div class="c-content__homes-row">
+                    <div class="c-content__homes-col c-content__homes-col--property">
+                        <div class="c-content__homes-property-photo">
+                            <img src="~/images/home7.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="c-content__homes-col c-content__homes-col--details">
+                        <span class="c-content__homes-price">$1,265,000</span>
+                        <span class="c-content__homes-location">La Mesa, CA</span>
+                        <span class="c-content__homes-address">5160 Alzeda Dr • La Mesa, CA 91941</span>
+                        <span class="c-content__homes-info">6 bed, 5.5 bath, 5,505 sqft</span>
+                        <span class="c-content__homes-date">Sold date: 07/07/2017</span>
+                    </div>
+                    <div class="c-content__homes-col c-content__homes-col--represented">
+                        Seller
+                    </div>
+                    <div class="c-content__homes-col c-content__homes-col--price">
+                        $1,265,000
+                    </div>
+                </div>
+            </div>
+            <ul class="l-list l-list--pagination h-hide-on-tablet">
+                <li class="l-list__pagination-control l-list__pagination-control--prev l-list__pagination-control--disabled">
+                    <a href="http://fast-coding.com/house/agent-profile.html#"></a>
+                </li>
+                <li class="l-list__pagination-pages">
+                    <span class="l-list-pagination__current">1</span>
+                    <span class="l-list-pagination__pages-count">32</span>
+                </li>
+                <li class="l-list__pagination-control l-list__pagination-control--next">
+                    <a href="http://fast-coding.com/house/agent-profile.html#"></a>
+                </li>
+            </ul>
+            <div class="l-row l-row--center h-hide-on-desktop">
+                <a class="l-btn l-btn-more l-btn-more--arrow-down" href="http://fast-coding.com/house/agent-profile.html#"><span class="h-hide-on-mobile">See </span>More</a>
+            </div>
+            <div class="l-divider l-divider--big"></div>
+            <h3>Ratings &amp; Reviews</h3>
+            <div class="c-content__filter c-content__filter--reviews h-clearfix">
+                <div class="l-col l-col-4 l-col-xs-6">
+                    <div class="jq-selectbox jqselect l-form-control l-form-select l-form-elem-custom" id="reviewType_ReviewFilter-styler">
+                        <select class="l-form-control l-form-select l-form-elem-custom" id="reviewType_ReviewFilter">
+                            <option>All reviews (16)</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="l-col l-col-4 l-col-xs-6">
+                    <div class="jq-selectbox jqselect l-form-control l-form-select l-form-elem-custom" id="reviewOrder_ReviewFilter-styler">
+                        <select class="l-form-control l-form-select l-form-elem-custom" id="reviewOrder_ReviewFilter">
+                            <option>Newest first</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="l-col l-col-4 h-hide-on-mobile">
+                    <button type="button" class="l-btn l-btn--action l-btn--blue">Write a Review</button>
+                </div>
+            </div>
+            <div class="c-content__reviews">
+                <div class="c-content__review-item">
+                    <div class="c-content__review-summary">
+                        <div class="c-content__review-info">
+                            <div class="c-content__review-date">
+                                09/24/2017
+                            </div>
+                            <div class="c-content__review-meta h-show-on-mobile">
+                                <div class="c-content__review-author">
+                                    Reviewed by: russroberts
+                                </div>
+                                <div class="c-content__review-home">
+                                    Bought a home in 2017 in El Cajon, CA
+                                </div>
+                            </div>
+                            <div class="c-content__rating c-content__rating--review">
+                                <div class="c-content__rating-stars">
+                                    <span class="c-content__rating-star c-content__rating-star--full"></span>
+                                    <span class="c-content__rating-star c-content__rating-star--full"></span>
+                                    <span class="c-content__rating-star c-content__rating-star--full"></span>
+                                    <span class="c-content__rating-star c-content__rating-star--full"></span>
+                                    <span class="c-content__rating-star c-content__rating-star--half-full"></span>
+                                </div>
+                                <div class="c-content__rating-info">
+                                    <div class="c-content__review-average">4.5</div>
+                                </div>
+                            </div>
+                            <div class="c-content__review-meta h-hide-on-mobile">
+                                <div class="c-content__review-author">
+                                    Reviewed by: russroberts
+                                </div>
+                                <div class="c-content__review-home">
+                                    Bought a home in 2017 in El Cajon, CA
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-content__skill-bars c-content__skill-bars--review">
+                            <div class="c-content__skill-bar">
+                                <div class="c-content__skill-bar-title">Local knowledge</div>
+                                <div class="c-content__skill-bar-average">4.5</div>
+                                <div class="c-content__skill-bar-row--default">
+                                    <div class="c-content__skill-bar-row" style="width:90%;"></div>
+                                </div>
+                            </div>
+                            <div class="c-content__skill-bar">
+                                <div class="c-content__skill-bar-title">Process expertise</div>
+                                <div class="c-content__skill-bar-average">4.2</div>
+                                <div class="c-content__skill-bar-row--default">
+                                    <div class="c-content__skill-bar-row" style="width:84%;"></div>
+                                </div>
+                            </div>
+                            <div class="c-content__skill-bar">
+                                <div class="c-content__skill-bar-title">Responsiveness</div>
+                                <div class="c-content__skill-bar-average">5.0</div>
+                                <div class="c-content__skill-bar-row--default">
+                                    <div class="c-content__skill-bar-row" style="width:100%;"></div>
+                                </div>
+                            </div>
+                            <div class="c-content__skill-bar">
+                                <div class="c-content__skill-bar-title">Negotiation Skills</div>
+                                <div class="c-content__skill-bar-average">4.1</div>
+                                <div class="c-content__skill-bar-row--default">
+                                    <div class="c-content__skill-bar-row" style="width:82%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-content__review-content">
+                        Being a full-service Realtor since 2007, I have been baptized by fire in a very tough housing market.
+                        I have successfully closed over 60 transactions and processed over 70 short sales both as the listing agent and some for other agents.
+                        I am very knowledgeable about lenders and their processes. I strive to exceed expectations and never forget that I am always accountable to my clients.
+                    </div>
+                </div>
+                <div class="c-content__review-item">
+                    <div class="c-content__review-summary">
+                        <div class="c-content__review-info">
+                            <div class="c-content__review-date">
+                                09/24/2017
+                            </div>
+                            <div class="c-content__review-meta h-show-on-mobile">
+                                <div class="c-content__review-author">
+                                    Reviewed by: russroberts
+                                </div>
+                                <div class="c-content__review-home">
+                                    Bought a home in 2017 in El Cajon, CA
+                                </div>
+                            </div>
+                            <div class="c-content__rating c-content__rating--review">
+                                <div class="c-content__rating-stars">
+                                    <span class="c-content__rating-star c-content__rating-star--full"></span>
+                                    <span class="c-content__rating-star c-content__rating-star--full"></span>
+                                    <span class="c-content__rating-star c-content__rating-star--full"></span>
+                                    <span class="c-content__rating-star c-content__rating-star--full"></span>
+                                    <span class="c-content__rating-star c-content__rating-star--half-full"></span>
+                                </div>
+                                <div class="c-content__rating-info">
+                                    <div class="c-content__review-average">4.5</div>
+                                </div>
+                            </div>
+                            <div class="c-content__review-meta h-hide-on-mobile">
+                                <div class="c-content__review-author">
+                                    Reviewed by: russroberts
+                                </div>
+                                <div class="c-content__review-home">
+                                    Bought a home in 2017 in El Cajon, CA
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-content__skill-bars c-content__skill-bars--review">
+                            <div class="c-content__skill-bar">
+                                <div class="c-content__skill-bar-title">Local knowledge</div>
+                                <div class="c-content__skill-bar-average">4.5</div>
+                                <div class="c-content__skill-bar-row--default">
+                                    <div class="c-content__skill-bar-row" style="width:90%;"></div>
+                                </div>
+                            </div>
+                            <div class="c-content__skill-bar">
+                                <div class="c-content__skill-bar-title">Process expertise</div>
+                                <div class="c-content__skill-bar-average">4.2</div>
+                                <div class="c-content__skill-bar-row--default">
+                                    <div class="c-content__skill-bar-row" style="width:84%;"></div>
+                                </div>
+                            </div>
+                            <div class="c-content__skill-bar">
+                                <div class="c-content__skill-bar-title">Responsiveness</div>
+                                <div class="c-content__skill-bar-average">5.0</div>
+                                <div class="c-content__skill-bar-row--default">
+                                    <div class="c-content__skill-bar-row" style="width:100%;"></div>
+                                </div>
+                            </div>
+                            <div class="c-content__skill-bar">
+                                <div class="c-content__skill-bar-title">Negotiation Skills</div>
+                                <div class="c-content__skill-bar-average">4.1</div>
+                                <div class="c-content__skill-bar-row--default">
+                                    <div class="c-content__skill-bar-row" style="width:82%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-content__review-content">
+                        Most important to me was communication and Mark saw that every question or concern of ours we met with full and complete information.
+                        In most cases, Mark delivered information to us before we even had to ask.
+                        I look forward to working with Mark in the future because I know that I can trust him to <a class="l-toggle-content-link" href="http://fast-coding.com/house/agent-profile.html#">More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="c-content__copyright c-content__copyright--zillow">
+                <div class="c-content__logo-copyright">
+                    <a href="http://fast-coding.com/house/agent-profile.html#">Zillow</a>
+                </div>
+                <p>
+                    © Zillow, Inc., 2006-2016. Use is subject to <a href="http://fast-coding.com/house/agent-profile.html#">Terms of Use</a>
+                </p>
+                <p>
+                    <a href="http://fast-coding.com/house/agent-profile.html#">What's a Zestimate?</a>
+                </p>
+            </div>
+        </div>
     </div>
 </div>
