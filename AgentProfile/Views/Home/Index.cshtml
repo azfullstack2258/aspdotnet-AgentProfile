@@ -8,7 +8,7 @@
             <div class="c-content__agent-profile h-clearfix">
                 <div class="c-content__agent-overview l-col l-col-8">
                     <div class="c-content__agent-card">
-                        <h1>Melissa Crosby</h1>
+                        <h1>@ViewData["Message"]</h1>
                         <div class="c-content__agent-profile-photo">
                             <img src="~/images/agent5.png" alt="">
                         </div>
@@ -58,23 +58,16 @@
                     </div>
                     <div class="c-content__agent-desc">
                         <h4 class="l-border">About</h4>
-                        <p>
-                            Being a full-service Realtor since 2007, I have been baptized by fire in a very tough housing market. I have successfully closed over 60 transactions and
-                            processed over 70 short sales both as the listing agent and some for other agents. I am very knowledgeable about lenders and their processes. I strive to
-                            exceed expectations and never forget that I am always accountable to my clients.
-                        </p>
-                        <p>
-                            My objective is to establish relationships for life, not just for the current transaction. I enjoy assisting home buyers and sellers to get moved to a
-                            better place, one that is exciting.
+                        <p>@ViewData["Summary_First_Part"]</p>
+                        <p>@ViewData["Summary_Second_Part"]</p>
+                        <p class="l-small">
+                            <strong>Brokerage:</strong> @ViewData["Brokerage"]
                         </p>
                         <p class="l-small">
-                            <strong>Brokerage:</strong> Berkshire Hathaway HomeServices Elite Real Estate
+                            <strong>Specialties:</strong> @ViewData["Specialties"]
                         </p>
                         <p class="l-small">
-                            <strong>Specialties:</strong> Property Management, Buyer’s Agent, Listing Agent…
-                        </p>
-                        <p class="l-small">
-                            <strong>License Number(s):</strong> #5452129
+                            <strong>License Number(s):</strong> @ViewData["License_Number"]
                         </p>
                     </div>
                 </div>
@@ -462,14 +455,14 @@
                     <div class="c-content__review-summary">
                         <div class="c-content__review-info">
                             <div class="c-content__review-date">
-                                09/24/2017
+                                @ViewData["reviewed_date_1"]
                             </div>
                             <div class="c-content__review-meta h-show-on-mobile">
                                 <div class="c-content__review-author">
-                                    Reviewed by: russroberts
+                                    Reviewed by: @ViewData["reviewed_by_1"]
                                 </div>
                                 <div class="c-content__review-home">
-                                    Bought a home in 2017 in El Cajon, CA
+                                    @ViewData["reviewed_address_1"]
                                 </div>
                             </div>
                             <div class="c-content__rating c-content__rating--review">
@@ -486,10 +479,10 @@
                             </div>
                             <div class="c-content__review-meta h-hide-on-mobile">
                                 <div class="c-content__review-author">
-                                    Reviewed by: russroberts
+                                    Reviewed by: @ViewData["reviewed_by_1"]
                                 </div>
                                 <div class="c-content__review-home">
-                                    Bought a home in 2017 in El Cajon, CA
+                                    @ViewData["reviewed_address_1"]
                                 </div>
                             </div>
                         </div>
@@ -524,24 +517,20 @@
                             </div>
                         </div>
                     </div>
-                    <div class="c-content__review-content">
-                        Being a full-service Realtor since 2007, I have been baptized by fire in a very tough housing market.
-                        I have successfully closed over 60 transactions and processed over 70 short sales both as the listing agent and some for other agents.
-                        I am very knowledgeable about lenders and their processes. I strive to exceed expectations and never forget that I am always accountable to my clients.
-                    </div>
+                    <div class="c-content__review-content">@ViewData["reviewed_text_1"]</div>
                 </div>
                 <div class="c-content__review-item">
                     <div class="c-content__review-summary">
                         <div class="c-content__review-info">
                             <div class="c-content__review-date">
-                                09/24/2017
+                                @ViewData["reviewed_date_2"]
                             </div>
                             <div class="c-content__review-meta h-show-on-mobile">
                                 <div class="c-content__review-author">
-                                    Reviewed by: russroberts
+                                    Reviewed by: @ViewData["reviewed_by_2"]
                                 </div>
                                 <div class="c-content__review-home">
-                                    Bought a home in 2017 in El Cajon, CA
+                                    @ViewData["reviewed_address_2"]
                                 </div>
                             </div>
                             <div class="c-content__rating c-content__rating--review">
@@ -558,10 +547,10 @@
                             </div>
                             <div class="c-content__review-meta h-hide-on-mobile">
                                 <div class="c-content__review-author">
-                                    Reviewed by: russroberts
+                                    Reviewed by: @ViewData["reviewed_by_2"]
                                 </div>
                                 <div class="c-content__review-home">
-                                    Bought a home in 2017 in El Cajon, CA
+                                    @ViewData["reviewed_address_2"]
                                 </div>
                             </div>
                         </div>
@@ -597,9 +586,7 @@
                         </div>
                     </div>
                     <div class="c-content__review-content">
-                        Most important to me was communication and Mark saw that every question or concern of ours we met with full and complete information.
-                        In most cases, Mark delivered information to us before we even had to ask.
-                        I look forward to working with Mark in the future because I know that I can trust him to <a class="l-toggle-content-link" href="http://fast-coding.com/house/agent-profile.html#">More</a>
+                        @ViewData["reviewed_text_2"] <a class="l-toggle-content-link" href="http://fast-coding.com/house/agent-profile.html#">More</a>
                     </div>
                 </div>
             </div>
