@@ -37,7 +37,7 @@
                 <div class="c-header__login-toggle h-clearfix">
                     <div class="c-header__login-icon">
                         <div class="c-header__login-avatar">
-                            <img src="./Agent profile_files/agent1.png" alt="">
+                            <img src="~/images/agent1.png" alt="">
                             <span class="c-header__user-notices c-header__user--has-notices">1</span>
                         </div>
                     </div>
@@ -165,10 +165,215 @@
     </button>
     <div class="container body-content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2018 - AgentProfile</p>
-        </footer>
+    </div>
+
+    <footer id="footer" class="c-footer">
+        <div class="c-footer__equal-housing-logo"></div>
+        <div class="l-row l-row--footer-logo">
+            <div class="l-container">
+                <div class="c-footer__logo">
+                    <a href="http://fast-coding.com/house/index.html">Homes.Forsale</a>
+                </div>
+            </div>
+        </div>
+        <div class="l-row l-row--copyright">
+            <div class="l-container">
+                <ul class="l-list l-list--social c-footer__social">
+                    <li>
+                        <a href="http://fast-coding.com/house/agent-profile.html#" target="_blank">
+                            <span class="l-list--social__icon">
+                                <img src="~/images/icon-instagram.svg" alt="">
+                            </span>
+                            <span class="l-list--social__icon--hover">
+                                <img src="~/images/icon-instagram-white.svg" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://fast-coding.com/house/agent-profile.html#" target="_blank">
+                            <span class="l-list--social__icon">
+                                <img src="~/images/icon-twitter.svg" alt="">
+                            </span>
+                            <span class="l-list--social__icon--hover">
+                                <img src="~/images/icon-twitter-white.svg" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://fast-coding.com/house/agent-profile.html#" target="_blank">
+                            <span class="l-list--social__icon">
+                                <img src="~/images/icon-facebook.svg" alt="">
+                            </span>
+                            <span class="l-list--social__icon--hover">
+                                <img src="~/images/icon-facebook-white.svg" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://fast-coding.com/house/agent-profile.html#" target="_blank">
+                            <span class="l-list--social__icon">
+                                <img src="~/images/icon-linkedin.svg" alt="">
+                            </span>
+                            <span class="l-list--social__icon--hover">
+                                <img src="~/images/icon-linkedin-white.svg" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://fast-coding.com/house/agent-profile.html#" target="_blank">
+                            <span class="l-list--social__icon">
+                                <img src="~/images/icon-youtube.svg" alt="">
+                            </span>
+                            <span class="l-list--social__icon--hover">
+                                <img src="~/images/icon-youtube-white.svg" alt="">
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="c-footer__copyright">
+                    <p>
+                        © Copyright 2017, Real Estate Guides. All rights are reserved.
+                    </p>
+                    <p>
+                        Updated January 2016: By searching, you agree to the <a href="http://fast-coding.com/house/agent-profile.html#">Terms of Use</a>, <a href="http://fast-coding.com/house/agent-profile.html#">Privacy Policy</a> and <a href="http://fast-coding.com/house/agent-profile.html#">End-User License Agreement.</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--======================== Sticky Footer ======================================-->
+    <footer id="footer-mobile" class="c-footer c-footer--mobile c-footer--mobile-agent">
+        <div class="c-footer__links c-footer__links--agent">
+            <a class="l-link l-link--action l-link--call" href="http://fast-coding.com/house/agent-profile.html#"><span>Call</span></a>
+            <a class="l-link l-link--action l-link--contact" href="mailto:email@goes.here"><span>Contact</span></a>
+            <a class="l-link l-link--action l-link--review" href="http://fast-coding.com/house/agent-profile.html#"><span>Leave Review</span></a>
+        </div>
+        <div class="c-footer__links c-footer__links--property">
+            <a class="l-link l-link--action l-link--save" href="http://fast-coding.com/house/agent-profile.html#"><span>Save</span></a>
+            <a class="l-link l-link--action l-link--agent" href="http://fast-coding.com/house/agent-profile.html#"><span>Agent</span></a>
+            <a class="l-link l-link--action l-link--direction" href="http://fast-coding.com/house/agent-profile.html#"><span>Directions</span></a>
+            <a class="l-link l-link--action l-link--share" href="http://fast-coding.com/house/agent-profile.html#"><span>Share</span></a>
+        </div>
+    </footer>
+    <!--======================== Mobile Navigation ==================================-->
+    <div class="c-mobile-wrap">
+        <div class="c-mobile-wrap__logo">
+            <a href="http://fast-coding.com/house/index.html">
+                <span class="c-mobile-wrap__logo-icon"></span>
+            </a>
+        </div>
+        <div class="c-mobile-wrap__nav">
+            <ul>
+                <li class="has-dropdown form-toggle">
+                    <span class="has-dropdown__title">My account</span>
+                    <ul class="l-dropdown--mobile">
+                        <li class="notices">
+                            <a href="http://fast-coding.com/house/agent-profile.html#"><span class="c-header__user-notices c-header__user--has-notices">1</span> Notices</a>
+                        </li>
+                        <li>
+                            <a href="http://fast-coding.com/house/agent-profile.html#">Account Settings</a>
+                        </li>
+                        <li>
+                            <a href="http://fast-coding.com/house/agent-profile.html#">Saved Searches</a>
+                        </li>
+                        <li>
+                            <a href="http://fast-coding.com/house/agent-profile.html#">Viewed Homes</a>
+                        </li>
+                        <li>
+                            <a href="http://fast-coding.com/house/agent-profile.html#">Favorited Homes</a>
+                        </li>
+                        <li>
+                            <a href="http://fast-coding.com/house/agent-profile.html#">Log Out</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <span class="has-dropdown__title">Buy</span>
+                    <ul class="l-dropdown--mobile">
+                        <li>
+                            <a href="http://fast-coding.com/house/agent-profile.html#">All Homes</a>
+                        </li>
+                        <li>
+                            <a href="http://fast-coding.com/house/agent-profile.html#">New Construction</a>
+                        </li>
+                        <li>
+                            <a href="http://fast-coding.com/house/agent-profile.html#">Forclosures</a>
+                        </li>
+                        <li>
+                            <a href="http://fast-coding.com/house/agent-profile.html#">Land</a>
+                        </li>
+                        <li>
+                            <a href="http://fast-coding.com/house/agent-profile.html#">Recently Sold</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="http://fast-coding.com/house/agent-profile.html#">Sell</a>
+                </li>
+                <li>
+                    <a href="http://fast-coding.com/house/agent-profile.html#">Neighborhood</a>
+                </li>
+                <li>
+                    <a href="http://fast-coding.com/house/agent-profile.html#">Mortgage</a>
+                </li>
+                <li class="has-dropdown">
+                    <span class="has-dropdown__title">Agents</span>
+                    <ul class="l-dropdown--mobile">
+                        <li>
+                            <a href="http://fast-coding.com/house/agent-profile.html#">Looking for an Agent</a>
+                        </li>
+                        <li>
+                            <a href="http://fast-coding.com/house/agent-profile.html#">Advertising Solutions</a>
+                        </li>
+                        <li>
+                            <a href="http://fast-coding.com/house/agent-profile.html#">Create Agent Profile</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--======================== Mobile Forms ================================-->
+    <div class="c-mobile-form-wrap">
+        <span class="c-mobile-form__close l-close-btn"></span>
+        <div class="c-mobile-form-wrap__inner">
+            <form class="l-form l-login-form l-login-form--mobile">
+                <div class="l-form__holder">
+                    <h3>Sign in</h3>
+                    <div class="l-form__inner">
+                        <div class="l-form-row">
+                            <div class="l-form-group">
+                                <input type="email" class="l-form-control" id="inputEmail_SignInFormMobile" required="">
+                                <label for="inputEmail_SignInFormMobile" class="l-form-label">email</label>
+                                <span class="l-form-control-focus"></span>
+                            </div>
+                        </div>
+                        <div class="l-form-row">
+                            <div class="l-form-group">
+                                <input type="password" class="l-form-control" id="inputPassword_SignInFormMobile" required="">
+                                <label for="inputPassword_SignInFormMobile" class="l-form-label">password</label>
+                                <span class="l-form-control-focus"></span>
+                                <a href="http://fast-coding.com/house/agent-profile.html#" class="l-form-link">Forgot Password?</a>
+                            </div>
+                        </div>
+                        <div class="l-form-row l-form-row--submit l-row--center">
+                            <button type="submit" class="l-btn l-btn-primary">Sign in</button>
+                            <div class="l-form-text">
+                                <a href="http://fast-coding.com/house/agent-profile.html#" class="l-form-link">Create an Account</a>
+                            </div>
+                        </div>
+                        <div class="l-form-row l-form-row--login-social">
+                            <div class="l-divider l-divider--form l-divider--light"><span>or</span></div>
+                            <div class="l-form-buttons">
+                                <button type="button" class="l-btn l-btn-login l-btn-login--facebook">Sign in with Facebook</button>
+                                <button type="button" class="l-btn l-btn-login l-btn-login--google">Sign in with Google</button>
+                                <button type="button" class="l-btn l-btn-login l-btn-login--microsoft">Sign in with Microsoft</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 
     <environment include="Development">
